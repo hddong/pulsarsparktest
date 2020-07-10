@@ -3,7 +3,6 @@ package org.apache.spark.sql.pulsar
 import java.util.UUID
 import java.{util => ju}
 
-import org.apache.pulsar.client.admin.PulsarAdmin
 import org.apache.spark.SparkEnv
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.catalyst.json.JSONOptionsInRead
@@ -11,7 +10,6 @@ import org.apache.spark.sql.catalyst.util.CaseInsensitiveMap
 import org.apache.spark.sql.pulsar.PulsarConfigurationUtils.{clientConfKeys, readerConfKeys}
 import org.apache.spark.sql.pulsar.PulsarOptions.{PULSAR_CLIENT_OPTION_KEY_PREFIX, PULSAR_READER_OPTION_KEY_PREFIX, SERVICE_URL_OPTION_KEY}
 import org.apache.spark.sql.pulsar.PulsarProvider.{paramsToPulsarConf}
-import org.apache.spark.sql.pulsar.JsonUtils
 
 /**
  * @author hongdd
